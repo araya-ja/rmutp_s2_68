@@ -9,6 +9,6 @@
     "ts-node": "^10.9.2"
   },
   "scripts": {
-    "build": "tsc src/server.ts --outDir build"
+    "build": "tsc"
   }
 }
