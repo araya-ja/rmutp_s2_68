@@ -9,6 +9,7 @@
     "ts-node": "^10.9.2"
   },
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "dev":"node dist/server.js"
   }
 }
