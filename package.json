@@ -2,7 +2,9 @@
   "dependencies": {
     "@hono/node-server": "^1.18.2",
     "@prisma/client": "^6.13.0",
+    "bcrypt": "^6.0.0",
     "hono": "^4.9.2",
+    "md5-typescript": "^1.0.5",
     "prisma": "^6.13.0"
   },
   "devDependencies": {
@@ -10,6 +12,6 @@
   },
   "scripts": {
     "build": "tsc",
-    "dev":"npm run build && node dist/server.js"
+    "dev": "npm run build && node dist/server.js"
   }
 }
