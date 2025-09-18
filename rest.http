@@ -27,3 +27,9 @@ Content-Type: application/json
     "username": "boon01",
     "password": "12345678"
 }
+
+### Encode
+POST http://localhost:3000/encode
+
+### Decode
+POST http://localhost:3000/decode
