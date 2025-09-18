@@ -2,6 +2,8 @@ import { Hono } from "hono";
 import { PrismaClient } from "@prisma/client";
 import * as bcrypt from "bcrypt";
 import { Md5 } from "md5-typescript";
+import {encode, decode} from "./security";
+
 
 const prisma = new PrismaClient();
 
@@ -112,11 +114,13 @@ app.post("/login", async (c) => {
 app.post("/encode", async (c) => {
     return c.json({
         message: "encode completed",
+        func: encode(),
     });
 });
 app.post("/decode", async (c) => {
     return c.json({
         message: "decode completed",
+        func: decode(),
     });
 });
 export default app;
