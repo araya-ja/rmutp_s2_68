@@ -109,5 +109,14 @@ app.post("/login", async (c) => {
         hash: userPassword
     });
 });
-
+app.post("/encode", async (c) => {
+    return c.json({
+        message: "encode completed",
+    });
+});
+app.post("/decode", async (c) => {
+    return c.json({
+        message: "decode completed",
+    });
+});
 export default app;
