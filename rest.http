@@ -28,8 +28,23 @@ Content-Type: application/json
     "password": "12345678"
 }
 
-### Encode
-POST http://localhost:3000/encode
+# REST API
 
-### Decode
+### Encode (เหมือน POST /profile)
+POST http://localhost:3000/encode
+Content-Type: application/json
+
+{
+  "username": "boon01",
+  "password": "12345678",
+  "mobile": "0812345678",
+  "cardId": "1234567890123"
+}
+
+### Decode (เหมือน GET /profile/:id)
 POST http://localhost:3000/decode
+Content-Type: application/json
+
+{
+  "id": "dfa1693f-7698-49c1-9c79-26a6d1c661bd"
+}
